@@ -1,14 +1,29 @@
 import React from 'react'
-import './ShoppingItem.css'
-import triangle from '../../assets/triangle.svg'
+import PropTypes from 'prop-types'
 
-export default function ShoppingItem () {
+import './ShoppingItem.css'
+
+export default function ShoppingItem ({
+  itemID,
+  image,
+  name,
+  price,
+  onClick
+}) {
   return (
     <div id='shopping-item'>
-      <img src={triangle} alt='Item' />
-      <span>Name: Item</span>
-      <span>Price: £100</span>
-      <button type='button'>Add to cart</button>
+      <img src={image} alt='Item' />
+      <span>{`Name: ${name}`}</span>
+      <span>{`Price: £${price}`}</span>
+      <button type='button' onClick={e => onClick(itemID)}>Add to cart</button>
     </div>
   )
+}
+
+ShoppingItem.propTypes = {
+  itemID: PropTypes.number.isRequired,
+  image: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  onClick: PropTypes.func.isRequired
 }
