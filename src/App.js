@@ -1,11 +1,11 @@
 import React from 'react'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
-import './styles.css'
+import './App.css'
 
 function App () {
   return (
-    <div className='App'>
+    <div id='App'>
       <Header></Header>
       <Footer></Footer>
     </div>

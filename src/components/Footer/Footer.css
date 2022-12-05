@@ -1,0 +1,22 @@
+footer {
+    /* Positioning */
+    flex: 0 0 auto;
+
+    /* Theme */
+    background-color: var(--main-dark-color);
+
+    /* Padding */
+    padding: 10px;
+
+    /* icon */
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+footer svg {
+    color: var(--main-light-color);
+}
+
+footer svg:hover {
+    color: green;
+}

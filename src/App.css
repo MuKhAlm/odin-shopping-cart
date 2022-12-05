@@ -1,0 +1,31 @@
+:root {
+    /* vars */
+    --main-dark-color: rgba(0, 0, 0, .7);
+    --main-light-color: white;
+}
+
+/* initializations */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* Remove scrollbar */
+  scrollbar-width: none;
+}
+
+html, body, #root, #App {
+    height: 100%;
+}
+
+/* Remove scrollbar */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+#App {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
