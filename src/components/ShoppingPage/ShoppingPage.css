@@ -1,14 +1,20 @@
 #shopping-page {
+    /* Display */
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
     /* Theme */
     background-color: var(--main-dark-color);
 
     /* Dimensions */
     height: 90%;
     width: min(90%, 900px);
+    overflow: auto;
 
     /* Positioning */
     margin: auto;
 
     /* Others */
     border-radius: 10px;
+    border: 1px solid var(--main-dark-color);
 }
