@@ -1,0 +1,53 @@
+:root {
+    /* vars */
+    --main-dark-color: rgba(0, 0, 0, .7);
+    --main-light-color: white;
+}
+
+/* initializations */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* Remove scrollbar */
+  scrollbar-width: none;
+}
+
+html, body, #root, .App {
+    height: 100%;
+}
+
+/* Remove scrollbar */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* Theme */
+.dark-style {
+    background-color: var(--main-dark-color);
+    color: var(--main-light-color);
+}
+
+.light-style {
+    background-color: var(--main-light-color);
+    color: var(--main-dark-color);
+}
+
+/* Text */
+.central-text {
+    text-align: center;
+}
+
+.not-selectable {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+/* Paddings and Margins */
+.regular-padding {
+    padding: 10px;
+}
