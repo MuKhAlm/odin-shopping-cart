@@ -1,0 +1,14 @@
+#shopping-page {
+    /* Theme */
+    background-color: var(--main-dark-color);
+
+    /* Dimensions */
+    height: 90%;
+    width: min(90%, 900px);
+
+    /* Positioning */
+    margin: auto;
+
+    /* Others */
+    border-radius: 10px;
+}
