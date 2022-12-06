@@ -15,7 +15,7 @@ export default function ShoppingItem ({
       <img src={image} alt='Item' />
       <span>{`Name: ${name}`}</span>
       <span>{`Price: £${price}`}</span>
-      <button type='button' onClick={e => onClick(itemID)}>Add to cart</button>
+      <button type='button' onClick={e => onClick(itemID, image, name, price)}>Add to cart</button>
     </div>
   )
 }
