@@ -1,4 +1,9 @@
 header {
+    /* Display */
+    display: flex;
+    justify-content: space-between;
+    
+
     /* Positioning */
     flex: 0 0 auto;
     
@@ -8,7 +13,9 @@ header {
 
     /* Padding */
     padding: 10px;
+}
 
+header h1 {
     /* Not selectable */
     user-select: none;
     -moz-user-select: none;
