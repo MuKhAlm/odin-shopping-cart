@@ -1,12 +1,17 @@
 import React from 'react'
-import Router from '../Router/Router'
+import { Routes, Route } from 'react-router-dom'
+import Cart from '../Cart/Cart'
+import ShoppingPage from '../ShoppingPage/ShoppingPage'
 
 import './Main.css'
 
 export default function Main () {
   return (
     <main>
-      <Router></Router>
+      <Routes>
+        <Route path='/' element={<ShoppingPage />} ></Route>
+        <Route path='/cart' element={<Cart />} ></Route>
+      </Routes>
     </main>
   )
 }
