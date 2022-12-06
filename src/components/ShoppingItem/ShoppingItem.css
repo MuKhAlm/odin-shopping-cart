@@ -20,7 +20,7 @@
 #shopping-item img {
     /* Display and dimensions*/
     display: block;
-    width: min(auto, 100%);
+    width: auto;
     height: 50%;
     margin: 5px;
 
