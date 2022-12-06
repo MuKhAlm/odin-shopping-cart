@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/odin-shopping-cart/static/css/main.199b6e29.css",
+    "main.js": "/odin-shopping-cart/static/js/main.ecc76368.js",
+    "static/media/eightPointStar.svg": "/odin-shopping-cart/static/media/eightPointStar.82bcbf020072eb147630db7a0da58d1d.svg",
+    "static/media/square.svg": "/odin-shopping-cart/static/media/square.2aaf48982ffd60773db3f2a68d821bb7.svg",
+    "index.html": "/odin-shopping-cart/index.html",
+    "static/media/rhombus.svg": "/odin-shopping-cart/static/media/rhombus.5f1987e310c98e776dcad5bc26df17e1.svg",
+    "static/media/octagon.svg": "/odin-shopping-cart/static/media/octagon.2fa94383254e86e189c9faf55b3f34fd.svg",
+    "static/media/rectangle.svg": "/odin-shopping-cart/static/media/rectangle.99bb11de9aa254b2dbad29cb4392ed1a.svg",
+    "static/media/triangle.svg": "/odin-shopping-cart/static/media/triangle.5a9eff1b1285bc859f34673f67556fb6.svg",
+    "static/media/star.svg": "/odin-shopping-cart/static/media/star.c7ea8f48ab767897019cddfbc089e31d.svg",
+    "static/media/circle.svg": "/odin-shopping-cart/static/media/circle.b8b733bc75bcdb44923edcbda81d6b79.svg",
+    "main.199b6e29.css.map": "/odin-shopping-cart/static/css/main.199b6e29.css.map",
+    "main.ecc76368.js.map": "/odin-shopping-cart/static/js/main.ecc76368.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.199b6e29.css",
+    "static/js/main.ecc76368.js"
+  ]
+}
