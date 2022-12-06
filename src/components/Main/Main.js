@@ -46,11 +46,48 @@ export default function Main () {
     }
   }
 
+  /**
+   * Increses or decreases the amount of the item in cart
+   * @param {Number} itemID Item's id
+   * @param {String} action Increase or decrease of the amount
+   */
+  const onCartItemAmountClick = (itemID, action) => {
+    if (action === '+') {
+      const item = cart.filter(item => item.itemID === itemID)[0]
+      setCart(prevCart => [
+        ...prevCart.filter(prevItem => prevItem.itemID !== itemID),
+        {
+          itemID,
+          image: item.image,
+          name: item.name,
+          price: item.price,
+          amount: item.amount + 1
+        }
+      ])
+    } else if (action === '-') {
+      const item = cart.filter(item => item.itemID === itemID)[0]
+      setCart(prevCart => [
+        ...prevCart.filter(prevItem => prevItem.itemID !== itemID),
+        {
+          itemID,
+          image: item.image,
+          name: item.name,
+          price: item.price,
+          amount: (item.amount > 1) ? item.amount - 1 : item.amount
+        }
+      ])
+    } else {
+      setCart(prevCart => [
+        ...prevCart.filter(item => (item.itemID !== itemID))
+      ])
+    }
+  }
+
   return (
     <main>
       <Routes>
         <Route path='/' element={<ShoppingPage onClick={onShoppingItemClick} />} ></Route>
-        <Route path='/cart' element={<Cart cart={cart} />} ></Route>
+        <Route path='/cart' element={<Cart cart={cart} onCartItemAmountClick={onCartItemAmountClick} />} ></Route>
       </Routes>
     </main>
   )

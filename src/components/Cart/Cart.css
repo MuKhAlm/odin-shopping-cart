@@ -1,4 +1,9 @@
 #cart {
+    /* Display */
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-auto-rows: 45%;
+
     /* Theme */
     background-color: var(--main-dark-color);
 
