@@ -1,13 +1,13 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import App from '../../App'
+import { Routes, Route } from 'react-router-dom'
+import Cart from '../Cart/Cart'
+import ShoppingPage from '../ShoppingPage/ShoppingPage'
 
 export default function Router () {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<App />} ></Route>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path='/' element={<ShoppingPage />} ></Route>
+      <Route path='/cart' element={<Cart />} ></Route>
+    </Routes>
   )
 }

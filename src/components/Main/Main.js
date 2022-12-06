@@ -1,12 +1,12 @@
 import React from 'react'
-import ShoppingPage from '../ShoppingPage/ShoppingPage'
+import Router from '../Router/Router'
 
 import './Main.css'
 
 export default function Main () {
   return (
     <main>
-      <ShoppingPage></ShoppingPage>
+      <Router></Router>
     </main>
   )
 }
