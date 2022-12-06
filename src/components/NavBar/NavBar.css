@@ -3,7 +3,7 @@
     justify-content: center;   
 }
 
-#nav-bar span, #nav-bar a {
+#nav-bar a {
     margin: 10px;
     color: var(--main-light-color);
 }
